@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>VITA</title>
+    <base href="/src/">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./app/assets/css/bootstrap.min.css">
+    <link type="text/css" href="./app/assets/css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+    <link href="./app/assets/css/baseLayout.css" rel='stylesheet' type='text/css'>
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="/node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="/node_modules/zone.js/dist/zone.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('main.js').catch(function (err) { console.error(err); });
+    </script>
+</head>
+
+<body>
+    <ln-app>Loading...</ln-app>
+
+    <script src="./app/assets/js/jquery-3.2.1.js"></script>
+    <script src="./app/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./app/assets/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="./app/assets/js/jquery.jscrollpane.min.js"></script>
+    <script src="./app/assets/js/custom.js"></script>
+    <script src="./app/assets/js/moment.js"></script>
+    <script src="./app/assets/js/bootstrap-datetimepicker.min.js"></script>
+</body>
+</html>

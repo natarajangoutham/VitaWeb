@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LoanWebApplication/LoanWebApplication/bin
+/LoanWebApplication/LoanWebApplication/node_modules
+/LoanWebApplication/LoanWebApplication/obj/Debug

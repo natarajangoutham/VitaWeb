@@ -1,0 +1,306 @@
+﻿<div class="container wrapper">
+
+    <div id="generalError" class="hide alert alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        All the fields are required.
+    </div>
+    
+    <div class="row marB20">
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 01 Customer Details</a></li>
+                <!--
+                                    <li ><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 02 Additional Details</a>
+                                    </li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 03 Customer Identification</a>
+                                    </li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 04 Customer References</a>
+                                    </li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 05 Employment</a>
+                                    </li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 06 Customer Expenditures</a>
+                                    </li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 07 Bank Details</a>
+                                    </li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 08 Loan Confirmation</a>
+                                    </li>
+                -->
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+
+    <div class="page-scroll-wrapper">
+
+        <div class="page-scroll-wrap">
+            <span class="page-text">
+                <span>Page <span class="orange paddL10">1</span>/3</span>
+            </span>
+            <div class="page-line-wrap">
+                <a href="#page1" class="page-line"></a>
+                <a href="#page2" class="page-line"></a>
+                <a href="#page3" class="page-line"></a>
+            </div>
+        </div>
+
+        <div id="page1">
+            <div class="row marB30">
+                <div class="col-sm-6">
+                    <span class="grey">Enter and validate the customer's infornation</span>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <span class="red">*</span>
+                    <span>These fields are required</span>
+
+                </div>
+            </div>
+
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="fname">First Name <span class="red">*</span></label>
+                        <input type="text" id="fname" class="form-control" required>
+                        <div id="errorMsgFname" class="red hide">First name is required</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="lname">Last Name <span class="red">*</span></label>
+                        <input type="text" id="lname" class="form-control" required>
+                        <div id="errorMsgLname" class="red hide">Last name is required</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="datetimepicker">Birthdate</label>
+                        <input type="text" class="form-control date" id="datetimepicker">
+                        <div id="errorMsgDate" class="red hide">Date is required</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="apt">Apt#</label>
+                            <input type="email" class="form-control" id="apt">
+                            <div id="errorMsgApt" class="red hide">Apt number is required</div>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="str">Street#<span class="red">*</span></label>
+                            <input type="password" class="form-control" id="str">
+                            <div id="errorMsgStr" class="red hide">Street number is required</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="strname">Street Name <span class="red">*</span></label>
+                        <input type="text" id="strname" class="form-control" required>
+                        <div id="errorMsgStrname" class="red hide">Street name is required</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="city">City<span class="red">*</span></label>
+                        <input type="text" id="city" class="form-control" required>
+                        <div id="errorMsgCity" class="red hide">City is required</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="country">Country <span class="red">*</span></label>
+                            <select id="country" class="form-control" required>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="province">Province <span class="red">*</span></label>
+                            <select id="province" class="form-control" required>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="post">Postal Code <span class="red">*</span></label>
+                        <input type="text" id="post" class="form-control" required>
+                        <div id="errorMsgPost" class="red hide">City is required</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="gender">Gender <span class="red">*</span></label>
+                            <select id="gender" class="form-control" required>
+                                <option value="">select</option>
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="plang">Preferred Languages <span class="red">*</span></label>
+                            <select id="plang" class="form-control" required>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-12 text-center">
+                    <a href="#page2" class="page-next"> Next<span class="p-next"></span></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="page2" class="hide">
+            <div class="row marB20">
+                <div class="col-sm-12 text-center">
+                    <a href="#page1" class="page-prev"> Previous<span class="p-prev"></span></a>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="mob">Mobile Phone #</label>
+                        <input type="text" id="mob" class="form-control" value="321-321-6456">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="moblist">Listed to</label>
+                        <input type="text" id="moblist" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="marT20">
+                        <span class="call-enable"></span>
+                        <span class="glyphicon glyphicon-list-alt list-enable"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="hphone">Home Phone #</label>
+                        <input type="text" id="hphone" class="form-control" value="321-321-6456">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="phonelist">Listed to</label>
+                        <input type="text" id="phonelist" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="marT20">
+                        <span class="call-enable"></span>
+                        <span class="glyphicon glyphicon-list-alt list-enable"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="wphone">Work Phone #</label>
+                        <input type="text" id="wphone" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="phonelist1">Listed to</label>
+                        <input type="text" id="phonelist1" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="marT20">
+                        <span class="call-disable"></span>
+                        <span class="glyphicon glyphicon-list-alt list-disable"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="custemail">Email</label>
+                        <input type="text" id="custemail" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="material-checkbox-group marT20">
+                        <input type="checkbox" id="checkbox1" name="checkbox" class="m-checkbox">
+                        <label class="m-checkbox-label" for="checkbox1">Opt Out?</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page3" class="hide">
+            <div class="row marB20">
+                <div class="col-sm-12 text-center">
+                    <a href="page2"> Previous<span class="p-prev"></span></a>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="ssn">SIN/SSN #</label>
+                        <input type="text" id="snn" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="occupation">Occupation <span class="red">*</span></label>
+                        <input type="text" id="occupation" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-sm-8 occ-wrap">
+                    <div class="material-checkbox-group marT20">
+                        <input type="checkbox" id="retired" name="checkbox" class="m-checkbox">
+                        <label class="m-checkbox-label" for="retired">Retired</label>
+                    </div>
+                    <div class="material-checkbox-group marT20">
+                        <input type="checkbox" id="unemp" name="checkbox" class="m-checkbox">
+                        <label class="m-checkbox-label" for="unemp">Unemployed</label>
+                    </div>
+                    <div class="material-checkbox-group marT20">
+                        <input type="checkbox" id="nmm" name="checkbox" class="m-checkbox">
+                        <label class="m-checkbox-label" for="nmm">NMM Active Employe</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a href="additional.html" class="btn btn-primary btn-next">Next</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker').datetimepicker({
+            format: 'DD/MM/YYYY'
+        });
+
+    });
+</script>
