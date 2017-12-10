@@ -136,6 +136,8 @@
     <Content Include="src\app\assets\js\bootstrap-datetimepicker.min.js" />
     <Content Include="src\app\assets\js\bootstrap.min.js" />
     <Content Include="src\app\assets\js\custom.js" />
+    <Content Include="src\app\assets\js\customerdetail.js" />
+    <Content Include="src\app\assets\js\home.js" />
     <Content Include="src\app\assets\js\jquery-3.2.1.js" />
     <Content Include="src\app\assets\js\jquery.jscrollpane.min.js" />
     <Content Include="src\app\assets\js\jquery.mousewheel.js" />

@@ -188,13 +188,13 @@ function onkeypress() {
         
     });
 }
-$('.page-next').on('click', function () {
-  $('#page2').removeClass('hide');
-  $('#page1').addClass('hide');
-  $('html, body').animate({
-    scrollTop: $('#page2').offset().top - 200
-          }, 2000);
-});
+//$('.page-next').on('click', function () {
+//  $('#page2').removeClass('hide');
+//  $('#page1').addClass('hide');
+//  $('html, body').animate({
+//    scrollTop: $('#page2').offset().top - 200
+//          }, 2000);
+//});
 $('.page-prev').on('click', function () {
   $('#page1').removeClass('hide');
   $('#page2').addClass('hide');
