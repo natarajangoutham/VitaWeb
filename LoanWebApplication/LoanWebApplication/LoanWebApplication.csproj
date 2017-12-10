@@ -116,6 +116,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="src\app\additionaldetail\additionalDetail.component.html" />
     <Content Include="src\app\assets\css\baselayout.css" />
     <Content Include="src\app\assets\css\bootstrap-datetimepicker.min.css" />
     <Content Include="src\app\assets\css\bootstrap.min.css" />
@@ -133,16 +134,25 @@
     <Content Include="src\app\assets\images\phone-call.png" />
     <Content Include="src\app\assets\images\search.png" />
     <Content Include="src\app\assets\images\user.png" />
+    <Content Include="src\app\assets\js\additionaldetail.js" />
     <Content Include="src\app\assets\js\bootstrap-datetimepicker.min.js" />
     <Content Include="src\app\assets\js\bootstrap.min.js" />
     <Content Include="src\app\assets\js\custom.js" />
     <Content Include="src\app\assets\js\customerdetail.js" />
+    <Content Include="src\app\assets\js\customerexpenditure.js" />
+    <Content Include="src\app\assets\js\customeridentification.js" />
+    <Content Include="src\app\assets\js\customerreferences.js" />
+    <Content Include="src\app\assets\js\employment.js" />
     <Content Include="src\app\assets\js\home.js" />
     <Content Include="src\app\assets\js\jquery-3.2.1.js" />
     <Content Include="src\app\assets\js\jquery.jscrollpane.min.js" />
     <Content Include="src\app\assets\js\jquery.mousewheel.js" />
     <Content Include="src\app\assets\js\moment.js" />
     <Content Include="src\app\customerdetail\customerDetail.component.html" />
+    <Content Include="src\app\customerexpenditure\customerExpenditure.component.html" />
+    <Content Include="src\app\customeridentification\customerIdentification.component.html" />
+    <Content Include="src\app\customerreferences\customerReferences.component.html" />
+    <Content Include="src\app\employmentdetail\employmentDetail.component.html" />
     <Content Include="src\app\home\home.component.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include="package.json" />
@@ -172,10 +182,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\additionaldetail\additionalDetail.component.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\customerdetail\customerDetail.component.ts" />
+    <TypeScriptCompile Include="src\app\customerexpenditure\customerExpenditure.component.ts" />
+    <TypeScriptCompile Include="src\app\customeridentification\customerIdentification.component.ts" />
+    <TypeScriptCompile Include="src\app\customerreferences\customerReferences.component.ts" />
+    <TypeScriptCompile Include="src\app\employmentdetail\employmentDetail.component.ts" />
     <TypeScriptCompile Include="src\app\home\home.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>

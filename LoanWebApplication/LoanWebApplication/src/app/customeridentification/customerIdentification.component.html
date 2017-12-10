@@ -1,0 +1,292 @@
+﻿<div class="container wrapper">
+    <div class="row marB20">
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li><a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 01 Customer Details</a></li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 02 Additional Details</a>
+                </li>
+                <li class="active">
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 03 Customer Identification</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+    <div class="page-scroll-wrapper">
+        <div class="page-scroll-wrap">
+            <span class="page-text">
+                <span>Page <span class="orange paddL10">1</span>/2</span>
+            </span>
+            <div class="page-line-wrap">
+                <a href="#page1" class="page-line page-two-line"></a>
+                <a href="#page2" class="page-line page-two-line"></a>
+            </div>
+        </div>
+        <div class="row marB20">
+            <div class="col-sm-8">
+                <span class="grey">Enter the customer's ID and you can optionally obtain their picture and signature</span>
+            </div>
+            <div class="col-sm-4">
+                <span class="red">*</span>
+                <span>These fields are required</span>
+
+            </div>
+        </div>
+        <div id="uploadWrapPage1">
+            <div class="row marB30">
+                <div class="col-sm-6">
+                    <div class="upload-wrap">
+                        <span class="icon-wrap">
+                            <img src="assets/images/user.png" alt="user">
+                        </span>
+                        <span>Drop Photo or click here</span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="upload-wrap">
+                        <span class="icon-wrap">
+                            <img src="assets/images/cloud.png" alt="user">
+                        </span>
+                        <span>Drop Photo or click here</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="height">Height</label>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" id="height" class="form-control">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="height" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="weight">Weight</label>
+                                <input type="text" id="weight" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="eye">Eye Color</label>
+                            <select id="eye" class="form-control">
+                                <option value="">select</option>
+                                <option value="">Black</option>
+                                <option value="">Brown</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="hair">Hair Color</label>
+                            <select id="hair" class="form-control">
+                                <option value="">select</option>
+                                <option value="">Black</option>
+                                <option value="">Brown</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-12">
+                    <h4>Identification 1</h4>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="selectdiv">
+                                    <label for="idType">ID Type</label>
+                                    <select id="idType" class="form-control">
+                                        <option value="">select</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="material-checkbox-group marT20">
+                                    <input type="checkbox" id="primaryId" name="checkbox" class="m-checkbox">
+                                    <label class="m-checkbox-label" for="primaryId">Primary ID</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="idNum">ID Number</label>
+                            <select id="idNum" class="form-control">
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="datetimepicker">Verification Date</label>
+                                <input type="text" class="form-control date" id="datetimepicker">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="material-checkbox-group marT20">
+                                    <input type="checkbox" id="idVerify" name="checkbox" class="m-checkbox">
+                                    <label class="m-checkbox-label" for="idVerify">ID Verify</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="idIssuer">ID Issuer</label>
+                            <select id="idIssuer" class="form-control" required>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="datetimepicker1">Issued</label>
+                        <input type="text" class="form-control date" id="datetimepicker1">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="datetimepicker2">Expiry</label>
+                        <input type="text" class="form-control date" id="datetimepicker2">
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-12 text-center">
+                    <a href="#page2" class="page-next"> Next<span class="p-next"></span></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="uploadWrapPag2" class="hide">
+            <div class="row marB20">
+                <div class="col-sm-12 text-center">
+                    <a href="#page1" class="page-prev"> Previous<span class="p-prev"></span></a>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-12">
+                    <h4>Identification 2</h4>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="selectdiv">
+                                    <label for="idType">ID Type</label>
+                                    <select id="idType" class="form-control">
+                                        <option value="">select</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="material-checkbox-group marT20">
+                                    <input type="checkbox" id="primaryId" name="checkbox" class="m-checkbox">
+                                    <label class="m-checkbox-label" for="primaryId">Primary ID</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="idNum">ID Number</label>
+                            <select id="idNum" class="form-control">
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="datetimepicker">Verification Date</label>
+                                <input type="text" class="form-control date" id="datetimepicker">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="material-checkbox-group marT20">
+                                    <input type="checkbox" id="idVerify" name="checkbox" class="m-checkbox">
+                                    <label class="m-checkbox-label" for="idVerify">ID Verify</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="idIssuer">ID Issuer</label>
+                            <select id="idIssuer" class="form-control" required>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="datetimepicker1">Issued</label>
+                        <input type="text" class="form-control date" id="datetimepicker1">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="datetimepicker2">Expiry</label>
+                        <input type="text" class="form-control date" id="datetimepicker2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a [routerLink]="['/additionaldetail']" class="btn btn-primary">Pervious</a>
+            <a [routerLink]="['/customerreferences']" class="btn btn-primary">Next</a>
+        </div>
+    </div>
+</div>

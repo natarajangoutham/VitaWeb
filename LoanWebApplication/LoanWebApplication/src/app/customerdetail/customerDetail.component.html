@@ -35,12 +35,12 @@
 
         <div class="page-scroll-wrap">
             <span class="page-text">
-                <span>Page <span class="orange paddL10">1</span>/3</span>
+                <span>Page <span id="page-number" class="orange paddL10">1</span>/3</span>
             </span>
             <div class="page-line-wrap">
-                <a href="#page1" class="page-line"></a>
-                <a href="customerdetail#page2" class="page-line"></a>
-                <a href="#page3" class="page-line"></a>
+                <a onclick="pageTwoPreviousClick()" class="page-line"></a>
+                <a onclick="pageOneNextClick()" class="page-line"></a>
+                <a onclick="pageTwoNextClick()" class="page-line"></a>
             </div>
         </div>
 
@@ -295,17 +295,7 @@
     </div>
     <div class="row marB20">
         <div class="col-sm-12 text-right btn-wrap">
-            <a href="additional.html" class="btn btn-primary btn-next">Next</a>
+            <a [routerLink]="['/additionaldetail']" class="btn btn-primary btn-next">Next</a>
         </div>
     </div>
 </div>
-<script src="../assets/js/customerdetail.js"></script>
-<script src="../assets/js/custom.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('#datetimepicker').datetimepicker({
-            format: 'DD/MM/YYYY'
-        });
-
-    });
-</script>

@@ -1,34 +1,31 @@
-﻿import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+﻿import { Component, OnInit } from '@angular/core';
 
 @Component({
     templateUrl: './customerDetail.component.html'
 })
 
-export class CustomerDetailComponent implements OnInit, AfterViewInit {
-    private fragment: string;
-
-    constructor(private route: ActivatedRoute, private router: Router) {
-    }
-
+export class CustomerDetailComponent implements OnInit {
+    
     public ngOnInit() {
-        this.loadScript('./app/assets/js/customerdetail.js');
-        this.loadScript('./app/assets/js/custom.js');
-    }
-    ngAfterViewInit(): void {
+        this.loadScript('customerdetail', './app/assets/js/customerdetail.js');
+        this.loadScript('custom', './app/assets/js/custom.js');
+
+        this.unLoadScript('home');
+        this.unLoadScript('additionaldetail');
     }
 
-    public loadScript(url: string) {
+    public loadScript(name: string, url: string) {
         let node = document.createElement('script');
+        node.setAttribute('id', name);
         node.src = url;
         node.type = 'text/javascript';
         document.getElementsByTagName('body')[0].appendChild(node);
     }
 
-    public unLoadScript(url: string) {
-        let node = document.createElement('script');
-        node.src = url;
-        node.type = 'text/javascript';
-        document.getElementsByTagName('body')[0].removeChild(node);
+    public unLoadScript(name: string) {
+        var scriptTag = document.getElementById(name);
+        if (scriptTag != undefined) {
+            scriptTag.remove();
+        }
     }
 }

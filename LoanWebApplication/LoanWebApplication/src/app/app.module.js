@@ -12,6 +12,10 @@ var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
 var customerDetail_component_1 = require("./customerdetail/customerDetail.component");
+var additionalDetail_component_1 = require("./additionaldetail/additionalDetail.component");
+var customerIdentification_component_1 = require("./customeridentification/customerIdentification.component");
+var customerReferences_component_1 = require("./customerreferences/customerReferences.component");
+var employmentDetail_component_1 = require("./employmentdetail/employmentDetail.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -22,6 +26,10 @@ var AppModule = /** @class */ (function () {
                 router_1.RouterModule.forRoot([
                     { path: 'home', component: home_component_1.HomeComponent },
                     { path: 'customerdetail', component: customerDetail_component_1.CustomerDetailComponent },
+                    { path: 'additionaldetail', component: additionalDetail_component_1.AdditionalDetailComponent },
+                    { path: 'customeridentification', component: customerIdentification_component_1.CustomerIdentificationComponent },
+                    { path: 'customerreferences', component: customerReferences_component_1.CustomerReferencesComponent },
+                    { path: 'employment', component: employmentDetail_component_1.EmploymentDetailComponent },
                     { path: '', redirectTo: 'home', pathMatch: 'full' },
                     { path: '**', redirectTo: 'home', pathMatch: 'full' }
                 ])
@@ -29,7 +37,11 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
-                customerDetail_component_1.CustomerDetailComponent
+                customerDetail_component_1.CustomerDetailComponent,
+                additionalDetail_component_1.AdditionalDetailComponent,
+                customerIdentification_component_1.CustomerIdentificationComponent,
+                customerReferences_component_1.CustomerReferencesComponent,
+                employmentDetail_component_1.EmploymentDetailComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         })

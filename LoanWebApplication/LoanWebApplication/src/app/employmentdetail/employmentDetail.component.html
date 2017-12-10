@@ -1,0 +1,200 @@
+﻿<div class="container wrapper">
+    <div class="row marB20">
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li><a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 01 Customer Details</a></li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 02 Additional Details</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 03 Customer Identification</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 04 Customer References</a>
+                </li>
+                <li class="active">
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 05 Employment</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+    <div class="page-scroll-wrapper">
+        <div class="page-scroll-wrap">
+            <span class="page-text">
+                <span>Page <span class="orange paddL10">1</span>/2</span>
+            </span>
+            <div class="page-line-wrap">
+                <a href="#page1" class="page-line page-two-line"></a>
+                <a href="#page2" class="page-line page-two-line"></a>
+            </div>
+        </div>
+        <div class="row marB20">
+            <div class="col-sm-8">
+                <span class="grey">Enter and validate the customer's employer</span>
+            </div>
+        </div>
+        <div id="empPage1">
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="empName">Employper Name*</label>
+                        <input type="text" id="empName" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="empPhone">Phone #</label>
+                        <input type="text" id="empPhone" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="marT20">
+                        <span class="call-enable"></span>
+                        <span>Call </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label for="apt">Apt#</label>
+                            <input type="email" class="form-control" id="apt">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="str">Street#<span class="red">*</span></label>
+                            <input type="password" class="form-control" id="str">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="strname">Street Name <span class="red">*</span></label>
+                        <input type="text" id="strname" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="city">City<span class="red">*</span></label>
+                        <input type="text" id="city" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="country">Country <span class="red">*</span></label>
+                            <select id="country" class="form-control" required>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="province">Province <span class="red">*</span></label>
+                            <select id="province" class="form-control" required>
+                                <option value="">select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="post">Postal Code <span class="red">*</span></label>
+                        <input type="text" id="post" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20 paddT72">
+                <div class="col-sm-12 text-center">
+                    <a href="#page2" class="page-next"> Next<span class="p-next"></span></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="emppage2" class="hide">
+            <div class="row marB20">
+                <div class="col-sm-12 text-center">
+                    <a href="#page1" class="page-prev"> Previous<span class="p-prev"></span></a>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="selectdiv">
+                            <label for="incomeType">Income Type*</label>
+                            <select id="incomeType" class="form-control">
+                                <option value="">Cannada Pension</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="netPay">Net Pay*</label>
+                                <input type="text" class="form-control" id="netPay">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <div class="material-checkbox-group marT20">
+                                    <input type="checkbox" id="ddeposit" name="checkbox" class="m-checkbox">
+                                    <label class="m-checkbox-label" for="ddeposit">Direct Deposit</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="datetimepicker">Last Pay Date*</label>
+                        <input type="text" class="form-control date" id="datetimepicker">
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="occupation">Occupation*</label>
+                        <input type="text" class="form-control search" id="occupation">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="dept">Department</label>
+                        <input type="text" class="form-control search" id="dept">
+                    </div>
+                </div>
+            </div>
+            <div class="row marB30">
+                <div class="col-sm-12 btn-wrap">
+                    <button class="btn btn-primary"> Cancel</button>
+                    <button class="btn btn-primary">Proof of Income</button>
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="nav-wrapper footer-nav col-sm-12">
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> Summary</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> Cannada Pension</a></li>
+                <li><a href="#" class="add-employment"><span class="glyphicon glyphicon-plus"></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a [routerLink]="['/customerreferences']" class="btn btn-primary">Previous</a>
+            <a [routerLink]="['/customerexpenditure']" class="btn btn-primary">Next</a>
+        </div>
+    </div>
+</div>

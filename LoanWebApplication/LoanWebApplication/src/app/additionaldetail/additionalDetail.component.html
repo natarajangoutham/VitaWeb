@@ -1,0 +1,83 @@
+﻿<div class="container wrapper">
+    <div class="row marB20">
+
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li><a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 01 Customer Details</a></li>
+                <li class="active">
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 02 Additional Details</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+    <div class="row marB30">
+        <div class="col-sm-6">
+            <span class="grey">Additional Details</span>
+        </div>
+        <div class="col-sm-6 text-center">
+            <span class="red">*</span>
+            <span>These fields are required</span>
+
+        </div>
+    </div>
+    <div class="row marB30">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="selectdiv">
+                    <label for="rent">Rent or Own? <span class="red">*</span></label>
+                    <select id="rent" class="form-control" required>
+                        <option value="">select</option>
+                        <option value="">Rent</option>
+                        <option value="">Own</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="monthlyRent">Monthly Rent/Mortgage Amount <span class="red">*</span></label>
+                <input type="text" id="monthlyRent" class="form-control" required>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="depends">Number of Dependents</label>
+                <input type="text" id="depends" class="form-control" required>
+            </div>
+        </div>
+    </div>
+    <div class="row marB30">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="selectdiv">
+                    <label for="martial">Martial status? <span class="red">*</span></label>
+                    <select id="martial" class="form-control" required>
+                        <option value="">select</option>
+                        <option value="">Married</option>
+                        <option value="">Unmarried</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <div class="selectdiv">
+                    <label for="spouseEmpolyed">Spouse Employed? <span class="red">*</span></label>
+                    <select id="spouseEmpolyed" class="form-control" required>
+                        <option value="">select</option>
+                        <option value="">Yes</option>
+                        <option value="">No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a [routerLink]="['/customerdetail']" class="btn btn-primary">Pervious</a>
+            <a [routerLink]="['/customeridentification']" class="btn btn-primary">Next</a>
+        </div>
+    </div>
+</div>

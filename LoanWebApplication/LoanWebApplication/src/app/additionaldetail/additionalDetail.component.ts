@@ -1,16 +1,15 @@
 ﻿import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './home.component.html'
+    templateUrl: './additionalDetail.component.html'
 })
 
-export class HomeComponent {
+export class AdditionalDetailComponent {
     public ngOnInit() {
-        this.loadScript('home', './app/assets/js/home.js');
+        this.clearScripts();
 
-        this.unLoadScript('customerdetail');
-        this.unLoadScript('custom');
-        this.unLoadScript('additionaldetail');
+        this.loadScript('custom', './app/assets/js/home.js');
+        this.loadScript('additionaldetail', './app/assets/js/additionaldetail.js');
     }
 
     public loadScript(name: string, url: string) {
@@ -25,6 +24,14 @@ export class HomeComponent {
         var scriptTag = document.getElementById(name);
         if (scriptTag != undefined) {
             scriptTag.remove();
-        }        
+        }
+    }
+
+    public clearScripts() {
+        this.unLoadScript('home');
+        this.unLoadScript('custom');
+        this.unLoadScript('customerdetail');
+        this.unLoadScript('additionaldetail');
+        this.unLoadScript('customeridentification');
     }
 }

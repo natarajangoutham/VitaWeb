@@ -1,0 +1,78 @@
+﻿<div class="container wrapper">
+    <div class="row marB20">
+
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li><a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 01 Customer Details</a></li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 02 Additional Details</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 03 Customer Identification</a>
+                </li>
+                <li class="active">
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 04 Customer References</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+    <div class="row marB30">
+        <div class="col-sm-12">
+            <span class="grey">Please enter and validate the customer's reference</span>
+        </div>
+    </div>
+    <div class="row marB30">
+
+        <div class="col-sm-4">
+            <span class="grey">Reference 1</span>
+            <div class="form-group">
+                <div class="selectdiv">
+                    <label for="refType">Reference Type</label>
+                    <select id="refType" class="form-control">
+                        <option value="">Father</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="refName">Reference Name </label>
+                <input type="text" id="refName" class="form-control">
+            </div>
+            <div class="form-group ref-phone-wrap">
+                <label for="refPhone">Phone#</label>
+                <input type="text" id="refPhone" class="form-control">
+                <span class="call-enable"></span>
+                <span class="glyphicon glyphicon-list-alt list-enable"></span>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <span class="grey">Reference 2</span>
+            <div class="form-group">
+                <div class="selectdiv">
+                    <label for="refType">Reference Type</label>
+                    <select id="refType" class="form-control">
+                        <option value="">Friend</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="refName">Reference Name </label>
+                <input type="text" id="refName" class="form-control">
+            </div>
+            <div class="form-group ref-phone-wrap">
+                <label for="refPhone">Phone#</label>
+                <input type="text" id="refPhone" class="form-control">
+                <span class="call-enable"></span>
+                <span class="glyphicon glyphicon-list-alt list-enable"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a [routerLink]="['/customeridentification']" class="btn btn-primary">Previous</a>
+            <a [routerLink]="['/employment']" class="btn btn-primary">Next</a>
+        </div>
+    </div>
+</div>
