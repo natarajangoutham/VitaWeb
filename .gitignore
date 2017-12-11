@@ -7,3 +7,6 @@
 /LoanWebApplication/LoanWebApplication/obj/Debug
 /.vs
 /LoanWebApplication/.vs/LoanWebApplication/v15
+/LoanWebApplication/Lending.Core.Service/obj
+/LoanWebApplication/Lending.Core.Service/bin
+/LoanWebApplication/LoanWebApplication/src/app/customerexpenditure
