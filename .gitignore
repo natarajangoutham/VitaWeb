@@ -5,3 +5,5 @@
 /LoanWebApplication/LoanWebApplication/bin
 /LoanWebApplication/LoanWebApplication/node_modules
 /LoanWebApplication/LoanWebApplication/obj/Debug
+/.vs
+/LoanWebApplication/.vs/LoanWebApplication/v15
