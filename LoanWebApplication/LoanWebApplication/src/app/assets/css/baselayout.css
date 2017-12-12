@@ -36,14 +36,14 @@ footer{
 }
 .paddTB15{padding-bottom: 15px;padding-top:15px}
 .marB20{margin-bottom: 20px;}
-.marB30{margin-bottom: 30px;}
+/*.marB30{margin-bottom: 25px;}*/
 .marT20{margin-top: 20px;}
 .paddL10{padding-left: 10px}
 .paddL0{padding-left: 0}
 paddR0{padding-right: 0}
-.paddT72{padding-top: 72px}
+/*.paddT72{padding-top: 72px}*/
 .textarea{width: 100%;height: 80px;resize: none;}
-.wrapper{width: 1024px;height: 675px;position: relative}
+.wrapper{width: 1010px;height: 570px;position: relative}
 /*landing page*/
 .landing-wrap{text-align: center;padding: 25px;}
 .select-wrap.dropdown{display: inline-block;background: #247df7}
@@ -160,7 +160,7 @@ paddR0{padding-right: 0}
 	padding:5px;
   	height:50px;
     float: left;
-    width: 957px;
+    width: 943px;
 
 }
 .nav-wrapper.footer-nav{margin-bottom: 0;width: 100%}
@@ -187,7 +187,7 @@ paddR0{padding-right: 0}
   text-align:center;
   cursor:pointer;
   padding:9px;
-  white-space:no-wrap;
+  white-space:nowrap;
   vertical-align:middle;
   background-color: #f2f6ff;
   border: 1px solid #ccc;
@@ -411,12 +411,13 @@ input.search{background:url(../images/search.png) 97% 48% no-repeat}
 .page-scroll-wrap{position: absolute;width: 100%;text-align: right;}
 .page-text{display: inline-block;vertical-align: top;font-size: 18px}
 .page-line-wrap{display: inline-block;width: 10px;}
-.page-line{display: block;width:5px;margin-bottom: 5px;height:150px;background: #b3b3b3;}
-.page-line.page-two-line{height: 215px;}
+.page-line{display: block;width:5px;margin-bottom: 5px;height:130px;background: #b3b3b3;}
+.page-line.page-two-line{height: 175px;}
 /**/
 .upload-wrap{padding: 15px;border: 3px dotted #247df7;border-radius: 3px;color: #247df7;font-weight: 600;font-size: 16px;}
 .icon-wrap{display: inline-block;padding-right: 20px;}
 .switch-label{display: inline-block;vertical-align: top;margin-top: 5px;}
+.btn-wrap{padding-right:50px}
 .btn-wrap .btn-primary{color:#247df7;border-color: #247df7;background: transparent}
 .btn-wrap .btn-primary:hover{color:#fff;background: #247df7}
 /*cusrom scroll*/
@@ -432,5 +433,5 @@ input.search{background:url(../images/search.png) 97% 48% no-repeat}
     background: #979798;
     }
 .ref-phone-wrap label{display: block}
-.ref-phone-wrap input{display: inline-block;width: 84%;vertical-align: super}
+.ref-phone-wrap input{display: inline-block;width: 83%;vertical-align: super}
 .ref-phone-wrap .call-enable{margin-right: 10px}
