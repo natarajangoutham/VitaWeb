@@ -7,28 +7,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var EmploymentDetailComponent = /** @class */ (function () {
-    function EmploymentDetailComponent() {
+var LoanConfirmationComponent = /** @class */ (function () {
+    function LoanConfirmationComponent() {
     }
-    EmploymentDetailComponent.prototype.ngOnInit = function () {
+    LoanConfirmationComponent.prototype.ngOnInit = function () {
         this.clearScripts();
         this.loadScript('custom', './app/assets/js/custom.js');
-        this.loadScript('employment', './app/assets/js/employment.js');
+        this.loadScript('loanconfirmation', './app/assets/js/loanconfirmation.js');
     };
-    EmploymentDetailComponent.prototype.loadScript = function (name, url) {
+    LoanConfirmationComponent.prototype.loadScript = function (name, url) {
         var node = document.createElement('script');
         node.setAttribute('id', name);
         node.src = url;
         node.type = 'text/javascript';
         document.getElementsByTagName('body')[0].appendChild(node);
     };
-    EmploymentDetailComponent.prototype.unLoadScript = function (name) {
+    LoanConfirmationComponent.prototype.unLoadScript = function (name) {
         var scriptTag = document.getElementById(name);
         if (scriptTag != undefined) {
             scriptTag.remove();
         }
     };
-    EmploymentDetailComponent.prototype.clearScripts = function () {
+    LoanConfirmationComponent.prototype.clearScripts = function () {
         this.unLoadScript('home');
         this.unLoadScript('custom');
         this.unLoadScript('customerdetail');
@@ -39,12 +39,12 @@ var EmploymentDetailComponent = /** @class */ (function () {
         this.unLoadScript('bankdetails');
         this.unLoadScript('loanconfirmation');
     };
-    EmploymentDetailComponent = __decorate([
+    LoanConfirmationComponent = __decorate([
         core_1.Component({
-            templateUrl: './employmentDetail.component.html'
+            templateUrl: './loanConfirmation.component.html'
         })
-    ], EmploymentDetailComponent);
-    return EmploymentDetailComponent;
+    ], LoanConfirmationComponent);
+    return LoanConfirmationComponent;
 }());
-exports.EmploymentDetailComponent = EmploymentDetailComponent;
-//# sourceMappingURL=employmentDetail.component.js.map
+exports.LoanConfirmationComponent = LoanConfirmationComponent;
+//# sourceMappingURL=loanConfirmation.component.js.map

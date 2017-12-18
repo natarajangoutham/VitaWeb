@@ -1,0 +1,100 @@
+﻿<div class="container wrapper">
+    <div class="row marB20">
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li><a [routerLink]="['/customerdetail']"><span class="glyphicon glyphicon-ok-circle"></span> 01 Customer Details</a></li>
+                <li>
+                    <a [routerLink]="['/additionaldetail']"><span class="glyphicon glyphicon-ok-circle"></span> 02 Additional Details</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/customeridentification']"><span class="glyphicon glyphicon-ok-circle"></span> 03 Customer Identification</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/customerreferences']"><span class="glyphicon glyphicon-ok-circle"></span> 04 Customer References</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/employment']"><span class="glyphicon glyphicon-ok-circle"></span> 05 Employment</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/customerexpenditure']"><span class="glyphicon glyphicon-ok-circle hide"></span> 06 Customer Expenditures</a>
+                </li>
+                <li class="active">
+                    <a><span class="glyphicon glyphicon-ok-circle hide"></span> 07 Bank Details</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12">
+            <span class="grey">Please validate customer's account info and scan the cheque(if applicable)</span>
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-4">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="transit">Transit#</label>
+                        <input type="text" id="transit" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inst">Institution#</label>
+                        <input type="text" id="inst" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="account">Account#</label>
+                <input type="text" id="account" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="confirm">Confirm#</label>
+                <input type="text" id="confirm" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="row marB20">
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="branchName">Branch Name</label>
+                <input type="text" id="branchName" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="instName">Institution Name</label>
+                <input type="text" id="instName" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12">
+            <div class="material-checkbox-group">
+                <input type="checkbox" id="obtained" name="checkbox" class="m-checkbox">
+                <label class="m-checkbox-label" for="obtained">Yes, I have obtained a signed application from the customer.</label>
+            </div>
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12">
+            <span class="grey">You must obtain signed loan application from the customer before proceeding further.</span>
+        </div>
+    </div>
+
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a [routerLink]="['/customerexpenditure']" class="btn btn-primary">Previous</a>
+            <a [routerLink]="['/loanconfirmation']" class="btn btn-primary">Next</a>
+        </div>
+    </div>
+</div>

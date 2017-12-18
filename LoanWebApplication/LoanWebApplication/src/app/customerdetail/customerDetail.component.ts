@@ -7,11 +7,10 @@
 export class CustomerDetailComponent implements OnInit {
     
     public ngOnInit() {
+        this.clearScripts();
+
         this.loadScript('customerdetail', './app/assets/js/customerdetail.js');
         this.loadScript('custom', './app/assets/js/custom.js');
-
-        this.unLoadScript('home');
-        this.unLoadScript('additionaldetail');
     }
 
     public loadScript(name: string, url: string) {
@@ -27,5 +26,17 @@ export class CustomerDetailComponent implements OnInit {
         if (scriptTag != undefined) {
             scriptTag.remove();
         }
+    }
+
+    public clearScripts() {
+        this.unLoadScript('home');
+        this.unLoadScript('custom');
+        this.unLoadScript('customerdetail');
+        this.unLoadScript('additionaldetail');
+        this.unLoadScript('customeridentification');
+        this.unLoadScript('customerreferences');
+        this.unLoadScript('customerexpenditure');
+        this.unLoadScript('bankdetails');
+        this.unLoadScript('loanconfirmation');
     }
 }

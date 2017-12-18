@@ -7,28 +7,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var EmploymentDetailComponent = /** @class */ (function () {
-    function EmploymentDetailComponent() {
+var BankDetailsComponent = /** @class */ (function () {
+    function BankDetailsComponent() {
     }
-    EmploymentDetailComponent.prototype.ngOnInit = function () {
+    BankDetailsComponent.prototype.ngOnInit = function () {
         this.clearScripts();
         this.loadScript('custom', './app/assets/js/custom.js');
-        this.loadScript('employment', './app/assets/js/employment.js');
+        this.loadScript('bankdetails', './app/assets/js/bankdetails.js');
     };
-    EmploymentDetailComponent.prototype.loadScript = function (name, url) {
+    BankDetailsComponent.prototype.loadScript = function (name, url) {
         var node = document.createElement('script');
         node.setAttribute('id', name);
         node.src = url;
         node.type = 'text/javascript';
         document.getElementsByTagName('body')[0].appendChild(node);
     };
-    EmploymentDetailComponent.prototype.unLoadScript = function (name) {
+    BankDetailsComponent.prototype.unLoadScript = function (name) {
         var scriptTag = document.getElementById(name);
         if (scriptTag != undefined) {
             scriptTag.remove();
         }
     };
-    EmploymentDetailComponent.prototype.clearScripts = function () {
+    BankDetailsComponent.prototype.clearScripts = function () {
         this.unLoadScript('home');
         this.unLoadScript('custom');
         this.unLoadScript('customerdetail');
@@ -39,12 +39,12 @@ var EmploymentDetailComponent = /** @class */ (function () {
         this.unLoadScript('bankdetails');
         this.unLoadScript('loanconfirmation');
     };
-    EmploymentDetailComponent = __decorate([
+    BankDetailsComponent = __decorate([
         core_1.Component({
-            templateUrl: './employmentDetail.component.html'
+            templateUrl: './bankDetails.component.html'
         })
-    ], EmploymentDetailComponent);
-    return EmploymentDetailComponent;
+    ], BankDetailsComponent);
+    return BankDetailsComponent;
 }());
-exports.EmploymentDetailComponent = EmploymentDetailComponent;
-//# sourceMappingURL=employmentDetail.component.js.map
+exports.BankDetailsComponent = BankDetailsComponent;
+//# sourceMappingURL=bankDetails.component.js.map

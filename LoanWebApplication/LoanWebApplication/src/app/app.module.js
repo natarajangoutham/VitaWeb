@@ -16,6 +16,9 @@ var additionalDetail_component_1 = require("./additionaldetail/additionalDetail.
 var customerIdentification_component_1 = require("./customeridentification/customerIdentification.component");
 var customerReferences_component_1 = require("./customerreferences/customerReferences.component");
 var employmentDetail_component_1 = require("./employmentdetail/employmentDetail.component");
+var customerExpenditure_component_1 = require("./customerexpenditure/customerExpenditure.component");
+var bankDetails_component_1 = require("./bankdetails/bankDetails.component");
+var loanConfirmation_component_1 = require("./loanconfirmation/loanConfirmation.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -30,6 +33,9 @@ var AppModule = /** @class */ (function () {
                     { path: 'customeridentification', component: customerIdentification_component_1.CustomerIdentificationComponent },
                     { path: 'customerreferences', component: customerReferences_component_1.CustomerReferencesComponent },
                     { path: 'employment', component: employmentDetail_component_1.EmploymentDetailComponent },
+                    { path: 'customerexpenditure', component: customerExpenditure_component_1.CustomerExpenditureComponent },
+                    { path: 'bankdetails', component: bankDetails_component_1.BankDetailsComponent },
+                    { path: 'loanconfirmation', component: loanConfirmation_component_1.LoanConfirmationComponent },
                     { path: '', redirectTo: 'home', pathMatch: 'full' },
                     { path: '**', redirectTo: 'home', pathMatch: 'full' }
                 ])
@@ -41,7 +47,10 @@ var AppModule = /** @class */ (function () {
                 additionalDetail_component_1.AdditionalDetailComponent,
                 customerIdentification_component_1.CustomerIdentificationComponent,
                 customerReferences_component_1.CustomerReferencesComponent,
-                employmentDetail_component_1.EmploymentDetailComponent
+                employmentDetail_component_1.EmploymentDetailComponent,
+                customerExpenditure_component_1.CustomerExpenditureComponent,
+                bankDetails_component_1.BankDetailsComponent,
+                loanConfirmation_component_1.LoanConfirmationComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         })

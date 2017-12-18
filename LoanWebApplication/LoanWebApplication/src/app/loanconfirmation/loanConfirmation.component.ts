@@ -1,15 +1,15 @@
 ﻿import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './customerReferences.component.html'
+    templateUrl: './loanConfirmation.component.html'
 })
 
-export class CustomerReferencesComponent {
+export class LoanConfirmationComponent {
     public ngOnInit() {
         this.clearScripts();
 
         this.loadScript('custom', './app/assets/js/custom.js');
-        this.loadScript('customerreferences', './app/assets/js/customerreferences.js');
+        this.loadScript('loanconfirmation', './app/assets/js/loanconfirmation.js');
     }
 
     public loadScript(name: string, url: string) {

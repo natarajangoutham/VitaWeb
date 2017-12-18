@@ -9,6 +9,9 @@ import { AdditionalDetailComponent } from './additionaldetail/additionalDetail.c
 import { CustomerIdentificationComponent } from './customeridentification/customerIdentification.component';
 import { CustomerReferencesComponent } from './customerreferences/customerReferences.component';
 import { EmploymentDetailComponent } from './employmentdetail/employmentDetail.component';
+import { CustomerExpenditureComponent } from './customerexpenditure/customerExpenditure.component';
+import { BankDetailsComponent } from './bankdetails/bankDetails.component';
+import { LoanConfirmationComponent } from './loanconfirmation/loanConfirmation.component';
 
 @NgModule({
     imports: [
@@ -20,6 +23,9 @@ import { EmploymentDetailComponent } from './employmentdetail/employmentDetail.c
             { path: 'customeridentification', component: CustomerIdentificationComponent },
             { path: 'customerreferences', component: CustomerReferencesComponent },
             { path: 'employment', component: EmploymentDetailComponent },
+            { path: 'customerexpenditure', component: CustomerExpenditureComponent },
+            { path: 'bankdetails', component: BankDetailsComponent },
+            { path: 'loanconfirmation', component: LoanConfirmationComponent },
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: '**', redirectTo: 'home', pathMatch: 'full' }
         ])
@@ -31,7 +37,10 @@ import { EmploymentDetailComponent } from './employmentdetail/employmentDetail.c
         AdditionalDetailComponent,
         CustomerIdentificationComponent,
         CustomerReferencesComponent,
-        EmploymentDetailComponent
+        EmploymentDetailComponent,
+        CustomerExpenditureComponent,
+        BankDetailsComponent,
+        LoanConfirmationComponent
     ],
     bootstrap: [AppComponent]
 })

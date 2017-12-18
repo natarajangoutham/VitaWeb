@@ -8,7 +8,7 @@ export class AdditionalDetailComponent {
     public ngOnInit() {
         this.clearScripts();
 
-        this.loadScript('custom', './app/assets/js/home.js');
+        this.loadScript('custom', './app/assets/js/custom.js');
         this.loadScript('additionaldetail', './app/assets/js/additionaldetail.js');
     }
 
@@ -33,5 +33,9 @@ export class AdditionalDetailComponent {
         this.unLoadScript('customerdetail');
         this.unLoadScript('additionaldetail');
         this.unLoadScript('customeridentification');
+        this.unLoadScript('customerreferences');
+        this.unLoadScript('customerexpenditure');
+        this.unLoadScript('bankdetails');
+        this.unLoadScript('loanconfirmation');
     }
 }

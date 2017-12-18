@@ -12,7 +12,7 @@ var CustomerReferencesComponent = /** @class */ (function () {
     }
     CustomerReferencesComponent.prototype.ngOnInit = function () {
         this.clearScripts();
-        this.loadScript('custom', './app/assets/js/home.js');
+        this.loadScript('custom', './app/assets/js/custom.js');
         this.loadScript('customerreferences', './app/assets/js/customerreferences.js');
     };
     CustomerReferencesComponent.prototype.loadScript = function (name, url) {
@@ -35,7 +35,9 @@ var CustomerReferencesComponent = /** @class */ (function () {
         this.unLoadScript('additionaldetail');
         this.unLoadScript('customeridentification');
         this.unLoadScript('customerreferences');
-        this.unLoadScript('employment');
+        this.unLoadScript('customerexpenditure');
+        this.unLoadScript('bankdetails');
+        this.unLoadScript('loanconfirmation');
     };
     CustomerReferencesComponent = __decorate([
         core_1.Component({

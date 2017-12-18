@@ -12,7 +12,7 @@ var CustomerIdentificationComponent = /** @class */ (function () {
     }
     CustomerIdentificationComponent.prototype.ngOnInit = function () {
         this.clearScripts();
-        this.loadScript('custom', './app/assets/js/home.js');
+        this.loadScript('custom', './app/assets/js/custom.js');
         this.loadScript('customeridentification', './app/assets/js/customeridentification.js');
     };
     CustomerIdentificationComponent.prototype.loadScript = function (name, url) {
@@ -35,6 +35,9 @@ var CustomerIdentificationComponent = /** @class */ (function () {
         this.unLoadScript('additionaldetail');
         this.unLoadScript('customeridentification');
         this.unLoadScript('customerreferences');
+        this.unLoadScript('customerexpenditure');
+        this.unLoadScript('bankdetails');
+        this.unLoadScript('loanconfirmation');
     };
     CustomerIdentificationComponent = __decorate([
         core_1.Component({

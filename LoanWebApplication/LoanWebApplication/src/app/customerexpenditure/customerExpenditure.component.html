@@ -1,10 +1,64 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-	<meta charset="utf-8" />
-</head>
-<body>
+﻿<div class="container wrapper">
+    <div class="row marB20">
 
-</body>
-</html>
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li><a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 01 Customer Details</a></li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 02 Additional Details</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 03 Customer Identification</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 04 Customer References</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle"></span> 05 Employment</a>
+                </li>
+                <li class="active">
+                    <a href="#"><span class="glyphicon glyphicon-ok-circle hide"></span> 06 Customer Expenditures</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12">
+            <span class="grey">Expenditures</span>
+        </div>
+    </div>
+    <div class="row marB20">
+
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="mcs">Monthly child support </label>
+                <input type="text" id="mcs" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="msse">Monthly Spousal support expense</label>
+                <input type="text" id="msse" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row marB20">
+
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="mpje">Monthly pay judgement expense</label>
+                <input type="text" id="mpje" class="form-control">
+            </div>
+        </div>
+
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a [routerLink]="['/employment']" class="btn btn-primary">Previous</a>
+            <a [routerLink]="['/bankdetails']" class="btn btn-primary">Next</a>
+        </div>
+    </div>
+
+</div>

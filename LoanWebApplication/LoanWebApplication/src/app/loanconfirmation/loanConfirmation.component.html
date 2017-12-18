@@ -1,0 +1,202 @@
+﻿<div class="container wrapper">
+    <div class="row marB20">
+
+        <div class="nav-wrapper col-sm-12">
+            <ul class="nav nav-tabs list" id="myTab">
+                <li><a [routerLink]="['/customerdetail']"><span class="glyphicon glyphicon-ok-circle "></span> 01 Customer Details</a></li>
+                <li>
+                    <a [routerLink]="['/additionaldetail']"><span class="glyphicon glyphicon-ok-circle "></span> 02 Additional Details</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/customeridentification']"><span class="glyphicon glyphicon-ok-circle"></span> 03 Customer Identification</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/customerreferences']"><span class="glyphicon glyphicon-ok-circle"></span> 04 Customer References</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/employment']"><span class="glyphicon glyphicon-ok-circle"></span> 05 Employment</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/customerexpenditure']"><span class="glyphicon glyphicon-ok-circle"></span> 06 Customer Expenditures</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/bankdetails']"><span class="glyphicon glyphicon-ok-circle"></span> 07 Bank Details</a>
+                </li>
+                <li class="active">
+                    <a ><span class="glyphicon glyphicon-ok-circle hide"></span> 08 Loan Confirmation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-right"></i></div>
+        <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-left"></i></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row marB20">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="loanappStatus">Loan Application status</label>
+                        <input type="text" class="form-control" id="loanappStatus">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="overrideStatus">Override status</label>
+                        <input type="text" class="form-control" id="overrideStatus">
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="amtcustomerLoan">Enter amount requested by customer's loan</label>
+                        <input type="text" class="form-control" id="amtcustomerLoan">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="availableamt">Available amount</label>
+                        <input type="text" class="form-control" id="availableamt">
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-7 paddL0">
+                    <h4>Select term from grid below for customer's loan</h4>
+                    <div class="loan-conf-table table-responsive scroll-pane">
+                        <table class="table trans-table">
+                            <thead>
+                                <tr>
+                                    <th>Loan amount</th>
+                                    <th>Total Amount</th>
+                                    <th>APR</th>
+                                    <th>Term(in months)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$7,500.00</td>
+                                    <td>$1,170.00</td>
+                                    <td>59.90%</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>$7,500.00</td>
+                                    <td>$1,170.00</td>
+                                    <td>59.90%</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>$7,500.00</td>
+                                    <td>$1,170.00</td>
+                                    <td>59.90%</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>$7,500.00</td>
+                                    <td>$1,170.00</td>
+                                    <td>59.90%</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>$7,500.00</td>
+                                    <td>$1,170.00</td>
+                                    <td>59.90%</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-5 paddR0">
+                    <h4>Loan repayment amount \date</h4>
+                    <div class="loan-conf-table table-responsive scroll-pane">
+                        <table class="table trans-table">
+                            <thead>
+                                <tr>
+                                    <th>Loan amount</th>
+                                    <th>Total Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$860.00</td>
+                                    <td>11/28/2017</td>
+                                </tr>
+                                <tr>
+                                    <td>$860.00</td>
+                                    <td>11/28/2017</td>
+                                </tr>
+                                <tr>
+                                    <td>$860.00</td>
+                                    <td>11/28/2017</td>
+                                </tr>
+                                <tr>
+                                    <td>$860.00</td>
+                                    <td>11/28/2017</td>
+                                </tr>
+                                <tr>
+                                    <td>$860.00</td>
+                                    <td>11/28/2017</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row marB20">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div>
+                            <label for="overstatusTxt">Override status</label>
+                        </div>
+                        <textarea class="textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="marB20">
+                            Skip first scheduled payments?
+                            (only eligible if within 5days)
+                        </label>
+                        <span class="switch-label">No</span>
+                        <div class="main-container__column materail-switch materail-switch_primary">
+                            <input class="materail-switch__element" type="checkbox" id="switch_input1">
+                            <label class="materail-switch__label" for="switch_input1"></label>
+                        </div>
+                        <span class="switch-label">Yes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row marB20">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="marB20">
+                            How do you want to receive the money from this loan?
+                        </label>
+                        <label class="main-container__column m-radio-group" for="radio1">
+                            <input type="radio" name="radiobox" id="radio1" class="m-radiobox" />
+                            <span class="m-radio-element m-radio-check-radio"></span>
+                            <span class="m-radio-element m-radio-caption">Cash</span>
+                        </label>
+                        <label class="main-container__column m-radio-group" for="radio2">
+                            <input type="radio" name="radiobox" id="radio2" class="m-radiobox" />
+                            <span class="m-radio-element m-radio-check-radio"></span>
+                            <span class="m-radio-element m-radio-caption">Loan</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row marB20">
+        <div class="col-sm-12 text-right btn-wrap">
+            <a [routerLink]="['/bankdetails']" class="btn btn-primary">Pervious</a>
+        </div>
+    </div>
+</div>

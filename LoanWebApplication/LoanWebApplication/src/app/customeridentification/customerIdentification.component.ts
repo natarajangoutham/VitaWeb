@@ -8,7 +8,7 @@ export class CustomerIdentificationComponent {
     public ngOnInit() {
         this.clearScripts();
 
-        this.loadScript('custom', './app/assets/js/home.js');
+        this.loadScript('custom', './app/assets/js/custom.js');
         this.loadScript('customeridentification', './app/assets/js/customeridentification.js');
     }
 
@@ -34,5 +34,8 @@ export class CustomerIdentificationComponent {
         this.unLoadScript('additionaldetail');
         this.unLoadScript('customeridentification');
         this.unLoadScript('customerreferences');
+        this.unLoadScript('customerexpenditure');
+        this.unLoadScript('bankdetails');
+        this.unLoadScript('loanconfirmation');
     }
 }

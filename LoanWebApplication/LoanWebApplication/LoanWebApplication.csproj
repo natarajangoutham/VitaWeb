@@ -135,6 +135,7 @@
     <Content Include="src\app\assets\images\search.png" />
     <Content Include="src\app\assets\images\user.png" />
     <Content Include="src\app\assets\js\additionaldetail.js" />
+    <Content Include="src\app\assets\js\bankdetails.js" />
     <Content Include="src\app\assets\js\bootstrap-datetimepicker.min.js" />
     <Content Include="src\app\assets\js\bootstrap.min.js" />
     <Content Include="src\app\assets\js\custom.js" />
@@ -147,13 +148,16 @@
     <Content Include="src\app\assets\js\jquery-3.2.1.js" />
     <Content Include="src\app\assets\js\jquery.jscrollpane.min.js" />
     <Content Include="src\app\assets\js\jquery.mousewheel.js" />
+    <Content Include="src\app\assets\js\loanconfirmation.js" />
     <Content Include="src\app\assets\js\moment.js" />
+    <Content Include="src\app\bankdetails\bankDetails.component.html" />
     <Content Include="src\app\customerdetail\customerDetail.component.html" />
     <Content Include="src\app\customerexpenditure\customerExpenditure.component.html" />
     <Content Include="src\app\customeridentification\customerIdentification.component.html" />
     <Content Include="src\app\customerreferences\customerReferences.component.html" />
     <Content Include="src\app\employmentdetail\employmentDetail.component.html" />
     <Content Include="src\app\home\home.component.html" />
+    <Content Include="src\app\loanconfirmation\loanConfirmation.component.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="src\app\assets\fonts\glyphicons-halflings-regular.eot" />
@@ -186,12 +190,14 @@
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\bankdetails\bankDetails.component.ts" />
     <TypeScriptCompile Include="src\app\customerdetail\customerDetail.component.ts" />
     <TypeScriptCompile Include="src\app\customerexpenditure\customerExpenditure.component.ts" />
     <TypeScriptCompile Include="src\app\customeridentification\customerIdentification.component.ts" />
     <TypeScriptCompile Include="src\app\customerreferences\customerReferences.component.ts" />
     <TypeScriptCompile Include="src\app\employmentdetail\employmentDetail.component.ts" />
     <TypeScriptCompile Include="src\app\home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\loanconfirmation\loanConfirmation.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

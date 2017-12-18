@@ -12,7 +12,7 @@ var AdditionalDetailComponent = /** @class */ (function () {
     }
     AdditionalDetailComponent.prototype.ngOnInit = function () {
         this.clearScripts();
-        this.loadScript('custom', './app/assets/js/home.js');
+        this.loadScript('custom', './app/assets/js/custom.js');
         this.loadScript('additionaldetail', './app/assets/js/additionaldetail.js');
     };
     AdditionalDetailComponent.prototype.loadScript = function (name, url) {
@@ -34,6 +34,10 @@ var AdditionalDetailComponent = /** @class */ (function () {
         this.unLoadScript('customerdetail');
         this.unLoadScript('additionaldetail');
         this.unLoadScript('customeridentification');
+        this.unLoadScript('customerreferences');
+        this.unLoadScript('customerexpenditure');
+        this.unLoadScript('bankdetails');
+        this.unLoadScript('loanconfirmation');
     };
     AdditionalDetailComponent = __decorate([
         core_1.Component({

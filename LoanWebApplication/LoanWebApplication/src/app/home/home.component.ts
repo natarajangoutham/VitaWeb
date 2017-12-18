@@ -6,11 +6,9 @@
 
 export class HomeComponent {
     public ngOnInit() {
-        this.loadScript('home', './app/assets/js/home.js');
+        this.clearScripts();
 
-        this.unLoadScript('customerdetail');
-        this.unLoadScript('custom');
-        this.unLoadScript('additionaldetail');
+        this.loadScript('home', './app/assets/js/home.js');
     }
 
     public loadScript(name: string, url: string) {
@@ -26,5 +24,17 @@ export class HomeComponent {
         if (scriptTag != undefined) {
             scriptTag.remove();
         }        
+    }
+
+    public clearScripts() {
+        this.unLoadScript('home');
+        this.unLoadScript('custom');
+        this.unLoadScript('customerdetail');
+        this.unLoadScript('additionaldetail');
+        this.unLoadScript('customeridentification');
+        this.unLoadScript('customerreferences');
+        this.unLoadScript('customerexpenditure');
+        this.unLoadScript('bankdetails');
+        this.unLoadScript('loanconfirmation');
     }
 }
